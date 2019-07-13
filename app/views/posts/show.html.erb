@@ -4,7 +4,7 @@
 <ul>
 <% @comments.each do |comment|%>
     <li>
-        <%= comment.description%>
+        <%= comment.description%><%=comment.user.email if comment.user %>
     </li>
 <% end %>
 </ul>
